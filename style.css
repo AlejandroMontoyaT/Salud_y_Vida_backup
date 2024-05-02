@@ -1,0 +1,364 @@
+* {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  margin: 8%;
+}
+
+main{
+  margin: 10px;
+  min-height: calc(100vh - (100px + 50px));
+  min-height: calc(85vh);
+  
+}
+
+
+/* Estilos para los elementos del carrusel */
+#banner .carousel-item {
+ 
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/* Estilos para el carrusel */
+#banner .carousel {
+	color: Black;
+    white-space: normal;
+    overflow: hidden; 
+}
+#banner .carousel p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+/* Animación de desplazamiento del carrusel */
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0);}
+}
+
+/* Estilos para el formulario */
+#form {
+ /* margin: -700px 1000px; /* Margen para posicionar el formulario */
+  width: 400px; /* Ancho del formulario */
+  /*padding: 10px; /* Espaciado interno del formulario */
+  size: 3vw; /* Tamaño de la fuente en relación con el ancho de la ventana */
+}
+
+/* Estilos para la imagen de contacto */
+.imgcontact {
+  width: 400px; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  /*margin-top: 80px; /* Margen superior para posicionar la imagen */
+  /*margin-left: 180px; /* Margen izquierdo para posicionar la imagen */
+}
+
+/* Estilos para el  banner (barra de navegación) */
+.navbar {
+}
+
+/* Estilos para el contenedor principal del encabezado */
+.container {
+  /*width: 80%; /* Ancho completo */
+  /*max-width: 1600px; /* Ancho máximo para el contenido del encabezado */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilos para el contenedor de la barra de navegación */
+.navigation-container {
+  /*display: flex; /* Utilizar visualización flexible */
+  justify-content: space-between; /* Alinear los elementos a los extremos */
+  align-items: center; /* Alinear los elementos verticalmente al centro */
+}
+
+/* Estilos para el logotipo */
+.navbar-brand img {
+  max-width: 250px; /* Ancho máximo del logotipo */
+}
+
+/* Estilos para el botón de menú desplegable */
+.navbar-toggler {
+  border: none; /* Quitar el borde */
+  outline: none; /* Quitar el contorno */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav .nav-link {
+  color: #003A5D; /* Color del texto */
+  margin-right: 20px; /* Espaciado a la derecha entre los enlaces */
+}
+
+a.nav-link:hover{
+  color: black; /* Color del texto */
+
+}
+button.navbar-toggler{
+  background-color: #003A5D;
+}
+/* Estilos para los enlaces de redes sociales */
+.navbar-nav .nav-link img {
+  max-width: 20px; /* Ancho máximo de las imágenes de redes sociales */
+  border: none; /* Quitar el borde */
+  outline: none; /* Quitar el contorno */
+  cursor: pointer;
+}
+
+/* Estilos para las acciones */
+.navbar-nav{
+ display: flex; /* Utilizar visualización flexible */
+  align-items: center; /* Alinear los elementos verticalmente al centro */
+}
+#menu{
+  background-color: rgb(252, 5, 5);
+  color:#1295e7;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  margin: 0;
+  text-align: center;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  font-size: 10px; /* Tamaño de la letra en 16px */
+}
+
+/*Comienza estilos para el fooster*/
+.footer {
+  background-color: #07778B; /* Color de fondo oscuro */
+  color: white; /* Color del texto blanco */
+  /*padding: 10px; /* Espaciado interno */
+  /*position: relative; /* Fijar el footer en la parte inferior de la ventana */
+  /*width: 100%; /* Ancho completo */
+  /*bottom: 0; /* Fijar en la parte inferior */
+  /*display: flex; /* Utilizar flexbox */
+  /*justify-content: normal; /* Distribuir los elementos de forma equitativa */
+  /*align-items: center; /* Alinear verticalmente al centro */
+}
+
+/* Estilos para las columnas del footer */
+.footer-column {
+  /*flex: 1; /* Cada columna ocupa el mismo espacio */
+  text-align: left; /* Alinear el texto al centro */
+  color: white; /* Color del texto blanco */
+  /* display: flex; /* Utilizar flexbox */ 
+  /*flex-direction: column; /* Dirección de la columna */
+  /*justify-content: normal; /* Alinear elementos al inicio (parte superior) */
+
+}
+
+/* Estilos para el título de las columnas */
+.footer-heading {
+  color: white; /* Color del texto blanco */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/*Para evitar que se vean los puntos en la web*/
+ul {
+
+  list-style-type: none; /* Quitar viñetas */
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para los elementos de la lista dentro de las columnas */
+.footer-column ul li {
+  /*margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+}
+
+/* Estilos para los enlaces dentro de las listas */
+.footer-column ul li a {
+  color: white; /* Color del texto blanco */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+/* Estilos para los enlaces de imagen dentro de las listas */
+.footer-column ul li img {
+  /*margin-right: 5px; /* Espaciado entre imágenes */
+}
+
+/* Estilos para las columnaC */
+.footer-columnC {
+  /*flex: 1; /* Cada columna ocupa el mismo espacio */
+  /*text-align: center; /* Alinear el texto al centro */
+  /*display: flex; /* Utilizar flexbox */
+  /*flex-direction: column; /* Dirección de la columna */
+  /*justify-content: flex-end; /* Alinear elementos al final (parte inferior) */
+}
+
+/* Estilos para el nombre de la compañía */
+.company-name {
+  color: white; /* Color del texto blanco */
+  size: 1vw;
+}
+
+.contenedor {
+  position: relative;
+}
+
+.contenedor p {
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: bold;
+  color: #003A5D;
+}
+
+.contenedor h2 {
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  Font-weight: bold;
+  color: #003A5D;
+}
+.tab-pane p {
+  padding: 10px;
+  background-color: #07778b79;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #003A5D;
+}
+
+.nav-text {
+  color:#003A5D;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+.carouselExampleControls{
+  padding:5%;
+}
+
+@media (min-width:1050px) and (max-width:1200px) {
+  .contenedor p {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-weight: bold;
+    color: #003A5D;
+  }
+  
+  .contenedor h2 {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    Font-weight: bold;
+    color: #003A5D;
+  }
+}
+.tabs{
+  padding: 0 75px;
+}
+
+@media (min-width:900px) and (max-width:1050px) {
+  .contenedor p {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-weight: bold;
+    color: #003A5D;
+  }
+  
+  .contenedor h2 {
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    Font-weight: bold;
+    color: #003A5D;
+  }
+
+  .tabs{
+    padding: 0;
+  }
+}
+
+
+#formulario-li-r{
+  width: 50%;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+  .contenedor {
+    position: relative;
+  }
+  .contenedor p {
+   position: relative;
+   transform: translate(0%, 0%);
+   top: 0%;
+   left: 0%;
+   background-color: #07778b79;
+   border-radius: 0 1rem;
+   padding: 5px 2rem 0;
+  }
+  .tabs{
+    padding: 0;
+  }
+  #formulario-li-r{
+    width: 100%;
+  }
+  #filtros{
+    display: none;
+  }
+  .red-social{
+  display:none;
+}
+.contenedor-head{
+  margin:0;
+  padding: 0%;
+}
+
+#popular1,#popular2{
+  width: 100%;
+}
+#items-populares, #items-populares2{
+display: grid;
+}
+
+}
+
+
+
+
+
+h1, h2 {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+  }
+
+h3, h4, h5 {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: medium;
+  font-style: normal;
+  }
